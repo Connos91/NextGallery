@@ -1,0 +1,146 @@
+.characterList {
+  justify-content: center;
+  align-items: center;
+  padding: 1vmin;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.backHome {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.backHome:hover {
+  color: whitesmoke;
+}
+
+.character {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+}
+
+.character:last-child {
+  margin-bottom: 0px;
+}
+
+.characterName {
+  background-color: #fff;
+  border: 2px solid #000;
+  margin: 0;
+  padding: 3px 10px;
+  font-size: 18px;
+  bottom: -2px;
+  position: absolute;
+  right: -6px;
+  transform: skew(-15deg);
+}
+
+.searchHeroContainer {
+  background-color: black;
+  padding: 8px;
+  height: 64px;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoImg {
+  cursor: pointer;
+}
+
+.logo {
+  height: 1em;
+}
+
+.masonryGrid {
+  display: flex;
+}
+
+.masonryGridColumn {
+  background-clip: padding-box;
+  padding: 5px;
+  text-align: center;
+}
+
+.conTitle {
+  font-weight: 700;
+  text-align: left;
+  color: white;
+  font-size: 30px;
+}
+.seriesTitle {
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+}
+.cardContent {
+  text-align: justify;
+  display: block;
+}
+
+.heroTitle {
+  text-align: right;
+  text-decoration: none;
+}
+.description {
+  text-align: right;
+  text-decoration: none;
+  color: black;
+}
+
+.description:hover {
+  color: #e61e4d;
+}
+
+.avatarTitle {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.search {
+  width: 320px;
+}
+
+@media screen and (max-width: 500px) {
+  .conTitle {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 355px) {
+  .search {
+    padding: 5px;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 355px) and (max-width: 410px) {
+  .search {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 410px) and (max-width: 450px) {
+  .search {
+    width: 280px;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 470px) {
+  .search {
+    width: 290px;
+  }
+}
